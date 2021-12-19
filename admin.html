@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./admin.css" />
+    <title>Admin page</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <a href="./index.html"> <h1>myShelf</h1></a>
+        <ul>
+          <li>
+            <a href="./cart.html"> <img src="assets/card.svg" /> </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="adminProducts">
+        <div id="outputAdmin"></div>
+      </div>
+      <div id="productForm">
+        <button id="hideForm" class="btn-red" style="display: none">
+          Hide Form
+        </button>
+        <button id="showForm" class="btn-red">Show Form</button>
+        <form id="adminForm">
+          <input
+            type="text"
+            id="autor"
+            class="adminInput"
+            placeholder="Autor "
+          />
+          <input
+            type="text"
+            id="titlu"
+            class="adminInput"
+            placeholder="Titlu"
+          />
+          <input
+            type="number"
+            id="pages"
+            class="adminInput"
+            placeholder="Pagini"
+          />
+          <input
+            type="number"
+            id="pret"
+            class="adminInput"
+            placeholder="Pret"
+          />
+          <input
+            type="text"
+            id="curency"
+            class="adminInput"
+            placeholder="Moneda"
+          />
+          <textarea
+            id="descriere"
+            cols="30"
+            rows="2"
+            placeholder="Descriere"
+          ></textarea>
+          <button id="adauga">Adauga produs</button>
+        </form>
+      </div>
+    </main>
+    <script src="./src/index.js" type="module"></script>
+    <script src="./src/admin.js" type="module"></script>
+    <script src="./src/ui.js" type="module"></script>
+    <script src="./src/colorTheme.js" type="module"></script>
+    <script src="./src//darkMode.js" type="module"></script>
+  </body>
+</html>

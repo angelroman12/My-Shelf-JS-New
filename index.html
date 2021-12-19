@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Shelf JS</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <a href="./index.html"> <h1>myShelf</h1></a>
+        <ul>
+          <li>
+            <a href="./admin.html"> <img src="assets/admin.svg" /></a>
+          </li>
+          <li>
+            <a href="./cart.html"> <img src="assets/card.svg" /> </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="theme">
+      <div id="mode">
+        <div>
+          <img
+            src="./assets/dark.svg"
+            alt=""
+            id="darkModeToggle"
+            style="background-color: orange"
+          />
+        </div>
+      </div>
+      <div id="colors">
+        <div id="red" class="colorSelector red"></div>
+        <div id="orange" class="colorSelector orange"></div>
+        <div id="blue" class="colorSelector blue"></div>
+      </div>
+    </div>
+    <main>
+      <div id="filters">
+        <div id="searchDiv">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search by title or author"
+          />
+          <span> <img src="./assets/search.svg" alt="" /> </span>
+        </div>
+
+        <button class="btn" id="all">Toate produsele</button>
+        <button class="btn" id="20">20 RON</button>
+        <button class="btn" id="30">30 RON</button>
+        <button class="btn" id="40">40 RON</button>
+        <button class="btn" id="50">50 RON</button>
+        <button class="btn" id="60">60 RON</button>
+      </div>
+      <div id="container">
+        <div id="output"></div>
+      </div>
+    </main>
+    <script src="./src/index.js" type="module"></script>
+    <script src="./src/uiFilter.js" type="module"></script>
+    <script src="./src/colorTheme.js" type="module"></script>
+    <script src="./src/darkMode.js"></script>
+  </body>
+</html>

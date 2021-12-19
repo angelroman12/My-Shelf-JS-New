@@ -1,0 +1,116 @@
+:root {
+  --red-color: #ff2442;
+  --blue-color: #3db2ff;
+  --orange-color: #ffb830;
+  --white-color: #ffedda;
+  --border-radius: 6px;
+  --padding: 0.8rem;
+  --margin: 1rem;
+}
+main {
+  display: flex;
+  padding: var(--padding);
+  /* position: relative;
+  top: 10px; */
+}
+
+#productForm {
+  width: 40%;
+  /* border: 1px solid black; */
+  padding: 1rem;
+}
+#productForm form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  display: none;
+}
+.adminInput {
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  background-color: var(--white-color);
+  padding: 0.4rem;
+  border-radius: var(--border-radius);
+}
+#descriere {
+  height: 3rem;
+  margin-bottom: 2rem;
+  border: none;
+  border: none;
+  background-color: var(--white-color);
+  padding: 0.4rem;
+  border-radius: var(--border-radius);
+}
+
+/* =========== Butoane ========== */
+
+#adauga {
+  background-color: var(--red-color);
+  height: 2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  color: #ffedda;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+#adauga:hover {
+  background-color: var(--orange-color);
+  color: #ff2442;
+}
+
+.btn-red {
+  background-color: var(--red-color);
+  height: 2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  color: #ffedda;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition-duration: 300ms;
+  margin: 0.5rem;
+  padding: 0.3rem 0.8rem;
+}
+
+#hideForm,
+#showForm {
+  margin-left: auto;
+}
+/* ===========  Admin Products Style ================= */
+#adminProducts {
+  width: 60%;
+  overflow: scroll;
+  height: 100vh;
+}
+.adminTable img {
+  width: 10%;
+}
+
+.adminTable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--padding);
+}
+
+.detaliiCarte {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: var(--padding);
+}
+
+.adminTable:nth-child(2n) {
+  background-color: #bbbbbb;
+}
+
+.adminTable:nth-child(2n-1) {
+  background-color: var(--white-color);
+}
